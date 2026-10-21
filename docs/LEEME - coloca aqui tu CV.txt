@@ -1,0 +1,10 @@
+Coloca en esta carpeta el archivo del CV con este nombre exacto:
+
+    CURRICULUM VITAE - GEORGE MORENO.pdf
+
+El botón "Descargar CV" del sitio (index.html) apunta a:
+
+    docs/CURRICULUM VITAE - GEORGE MORENO.pdf
+
+Si usas otro nombre de archivo, actualiza el enlace en index.html.
+Puedes borrar este archivo .txt una vez agregado el PDF.

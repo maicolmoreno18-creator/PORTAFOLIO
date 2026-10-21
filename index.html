@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de George Moreno — Ingeniero de Sistemas especializado en Soporte TI, Análisis de Datos y Desarrollo Web.">
+    <meta name="author" content="George Moreno">
+    <meta name="theme-color" content="#0a0c10">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="George Moreno | Ingeniería de Sistemas · Soporte TI · Datos · Web">
+    <meta property="og:description" content="Ingeniero de Sistemas que resuelve problemas tecnológicos, sostiene operaciones de TI y construye soluciones web basadas en datos.">
+    <meta property="og:type" content="website">
+
+    <title>George Moreno · Ingeniería de Sistemas · Soporte TI · Datos · Web</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Skip link (accesibilidad) -->
+    <a class="skip-link" href="#hero">Saltar al contenido</a>
+
+    <!-- Fondo: cuadrícula técnica + brillo -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="nav" id="nav">
+        <div class="container nav__inner">
+            <a class="brand" href="#hero" aria-label="Inicio — George Moreno">
+                <span class="brand__mark" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7 3 12l5 5"/><path d="m16 7 5 5-5 5"/></svg>
+                </span>
+                <span class="brand__text">George<span class="brand__dot">.</span>Moreno</span>
+            </a>
+
+            <nav class="nav__links" id="navLinks" aria-label="Navegación principal">
+                <a href="#hero" class="nav__link is-active">Inicio</a>
+                <a href="#sobre-mi" class="nav__link">Sobre mí</a>
+                <a href="#experiencia" class="nav__link">Experiencia</a>
+                <a href="#habilidades" class="nav__link">Habilidades</a>
+                <a href="#proyectos" class="nav__link">Proyectos</a>
+                <a href="#formacion" class="nav__link">Formación</a>
+                <a href="#contacto" class="nav__link nav__link--cta">Contacto</a>
+            </nav>
+
+            <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===================== HERO ===================== -->
+        <section id="hero" class="hero">
+            <div class="container hero__inner">
+                <div class="hero__content reveal">
+                    <p class="hero__eyebrow">
+                        <span class="status-dot" id="statusDot" data-available="true"></span>
+                        <span id="statusText">Disponible para nuevas oportunidades</span>
+                    </p>
+
+                    <h1 class="hero__title">GEORGE MORENO</h1>
+
+                    <p class="hero__roles" aria-label="Áreas de especialización">
+                        <span>Ingeniería de Sistemas</span>
+                        <span class="sep">·</span>
+                        <span>Soporte TI</span>
+                        <span class="sep">·</span>
+                        <span>Análisis de Datos</span>
+                        <span class="sep">·</span>
+                        <span>Desarrollo Web</span>
+                    </p>
+
+                    <p class="hero__desc">
+                        Resuelvo problemas tecnológicos, sostengo operaciones de TI y convierto datos
+                        en decisiones. Diseño y construyo soluciones web que funcionan de verdad,
+                        con criterio de ingeniería y foco en resultados.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="#proyectos" class="btn btn--primary">
+                            Ver proyectos
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+                        <a href="#contacto" class="btn btn--ghost">Contactarme</a>
+                        <a href="docs/CURRICULUM VITAE - GEORGE MORENO.pdf" download class="btn btn--text">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+                            Descargar CV
+                        </a>
+                    </div>
+
+                    <ul class="hero__social" aria-label="Enlaces externos">
+                        <li>
+                            <a href="https://github.com/maicolmoreno18-creator" target="_blank" rel="noopener" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+                                <span>GitHub</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Composición visual técnica (CSS puro, sin foto genérica) -->
+                <div class="hero__visual reveal" data-reveal-delay="120">
+                    <div class="photo">
+                        <div class="photo__glow" aria-hidden="true"></div>
+                        <div class="photo__ring" aria-hidden="true"></div>
+                        <div class="photo__frame">
+                            <img src="img/desarrollador.jpg" alt="George Moreno" class="photo__img"
+                                 width="760" height="760" fetchpriority="high" decoding="async" />
+                        </div>
+                        <div class="chip chip--1" aria-hidden="true"><span class="chip__dot"></span> Soporte TI</div>
+                        <div class="chip chip--2" aria-hidden="true"><span class="chip__dot"></span> Power BI</div>
+                        <div class="chip chip--3" aria-hidden="true"><span class="chip__dot"></span> Node.js</div>
+                        <div class="chip chip--4" aria-hidden="true"><span class="chip__dot"></span> Datos</div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#sobre-mi" class="hero__scroll" aria-label="Desplazarse a Sobre mí">
+                <span></span>
+            </a>
+        </section>
+
+        <!-- ===================== SOBRE MÍ ===================== -->
+        <section id="sobre-mi" class="section">
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="section__kicker">01 — Perfil</span>
+                    <h2 class="section__title">Sobre mí</h2>
+                </header>
+
+                <div class="about">
+                    <div class="about__lead reveal">
+                        <p>
+                            Soy Ingeniero de Sistemas con una visión integral entre la tecnología y la
+                            gestión de procesos. Combino el soporte técnico TI, el análisis de datos y el
+                            desarrollo web para aportar valor real a las organizaciones.
+                        </p>
+                        <p>
+                            Me caracterizo por ser analítico, organizado y orientado a resultados, con
+                            facilidad para aprender nuevas tecnologías y adaptarme a distintos entornos.
+                            Mi complemento en asistencia administrativa me da una lectura práctica de
+                            cómo la tecnología impacta en la operación diaria.
+                        </p>
+                    </div>
+
+                    <ul class="about__facts reveal" data-reveal-delay="100">
+                        <li>
+                            <span class="about__fact-ico" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>
+                            </span>
+                            <div>
+                                <h3>Mentalidad de ingeniería</h3>
+                                <p>Diagnóstico estructurado y soluciones mantenibles.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="about__fact-ico" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg>
+                            </span>
+                            <div>
+                                <h3>Decisiones con datos</h3>
+                                <p>Depuración, validación y lectura de la información.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="about__fact-ico" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/></svg>
+                            </span>
+                            <div>
+                                <h3>Operación continua</h3>
+                                <p>Soporte TI que mantiene a los equipos funcionando.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== EXPERIENCIA ===================== -->
+        <section id="experiencia" class="section section--alt">
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="section__kicker">02 — Trayectoria</span>
+                    <h2 class="section__title">Experiencia</h2>
+                </header>
+
+                <ol class="timeline">
+                    <li class="timeline__item reveal">
+                        <div class="timeline__node" aria-hidden="true"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__top">
+                                <h3 class="timeline__role">Asesor de Ventas — Construsoluciones del Meta</h3>
+                                <span class="tag tag--sales">Ventas · Casas Prefabricadas</span>
+                            </div>
+                            <p class="timeline__desc">
+                                Asesoría comercial y técnica para una empresa de casas prefabricadas.
+                                Acompaño al cliente desde la venta hasta la fabricación, diseñando planos
+                                personalizados y coordinando la producción de los módulos y los acabados
+                                de cada vivienda.
+                            </p>
+                            <ul class="timeline__points">
+                                <li>Asesoría y venta a clientes</li>
+                                <li>Diseño de planos personalizados según cada necesidad</li>
+                                <li>Direccionamiento de la fabricación de módulos</li>
+                                <li>Coordinación de diseños y acabados de la vivienda</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__node" aria-hidden="true"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__top">
+                                <h3 class="timeline__role">Instructor de Unidades Productivas — Gobernación de Casanare</h3>
+                                <span class="tag tag--edu">Formación · Ofimática</span>
+                            </div>
+                            <p class="timeline__desc">
+                                Instructor en el programa de unidades productivas de papelería de la
+                                Gobernación de Casanare. En tres convocatorias capacité a más de 12
+                                unidades productivas en herramientas digitales y atención comercial.
+                            </p>
+                            <ul class="timeline__points">
+                                <li>Capacitación a más de 12 unidades productivas de papelería</li>
+                                <li>Formación en ofimática y herramientas de oficina</li>
+                                <li>Servicio al cliente y atención comercial</li>
+                                <li>Manejo de correo electrónico y comunicación digital</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__node" aria-hidden="true"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__top">
+                                <h3 class="timeline__role">Soporte Técnico TI — Sector Petrolero</h3>
+                                <span class="tag tag--it">Soporte TI</span>
+                            </div>
+                            <p class="timeline__desc">
+                                Soporte técnico TI corporativo: atención a usuarios en sitio, resolución de
+                                incidencias y apoyo en procesos de migración de datos.
+                            </p>
+                            <ul class="timeline__points">
+                                <li>Soporte técnico a usuarios en sitio</li>
+                                <li>Migración y validación de datos</li>
+                                <li>Instalación de sistemas operativos</li>
+                                <li>Mantenimiento preventivo y correctivo</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__node" aria-hidden="true"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__top">
+                                <h3 class="timeline__role">Analista de Datos — Gestión Latinoamérica</h3>
+                                <span class="tag tag--data">Análisis de Datos</span>
+                            </div>
+                            <p class="timeline__desc">
+                                Análisis y gestión de bases de datos a nivel Latinoamérica, consolidando
+                                información de varios países con altos estándares de calidad.
+                            </p>
+                            <ul class="timeline__points">
+                                <li>Consolidación de datos multinacionales</li>
+                                <li>Depuración y normalización de bases de datos</li>
+                                <li>Control de calidad de la información</li>
+                            </ul>
+                            <div class="chips">
+                                <span class="mini-tag">Excel Avanzado</span>
+                                <span class="mini-tag">Power BI</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__node" aria-hidden="true"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__top">
+                                <h3 class="timeline__role">Soporte TI y Sistemas de Seguridad — Freelance</h3>
+                                <span class="tag tag--free">Freelance</span>
+                            </div>
+                            <p class="timeline__desc">
+                                Servicios independientes de soporte técnico TI, incluyendo instalación y
+                                configuración de sistemas de videovigilancia.
+                            </p>
+                            <ul class="timeline__points">
+                                <li>Instalación de cámaras de seguridad</li>
+                                <li>Configuración de red y conectividad</li>
+                                <li>Diagnóstico y solución de fallas</li>
+                                <li>Atención directa a clientes</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ===================== HABILIDADES ===================== -->
+        <section id="habilidades" class="section">
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="section__kicker">03 — Capacidades</span>
+                    <h2 class="section__title">Habilidades</h2>
+                    <p class="section__sub">
+                        Tecnologías y competencias aplicadas en entornos académicos, laborales y proyectos propios.
+                    </p>
+                </header>
+
+                <div class="cards">
+                    <article class="card reveal">
+                        <div class="card__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6"/><path d="m16 6 6 6-6 6"/></svg>
+                        </div>
+                        <h3 class="card__title">Desarrollo y Programación</h3>
+                        <div class="chips">
+                            <span class="mini-tag">HTML5</span>
+                            <span class="mini-tag">CSS3</span>
+                            <span class="mini-tag">JavaScript</span>
+                            <span class="mini-tag">Node.js</span>
+                            <span class="mini-tag">Express</span>
+                        </div>
+                    </article>
+
+                    <article class="card reveal" data-reveal-delay="100">
+                        <div class="card__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg>
+                        </div>
+                        <h3 class="card__title">Datos y Análisis</h3>
+                        <div class="chips">
+                            <span class="mini-tag">Excel Avanzado</span>
+                            <span class="mini-tag">Power BI</span>
+                            <span class="mini-tag">Análisis de Datos</span>
+                            <span class="mini-tag">Inteligencia Artificial</span>
+                        </div>
+                    </article>
+
+                    <article class="card reveal" data-reveal-delay="200">
+                        <div class="card__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2-2 2.3-2.3Z"/></svg>
+                        </div>
+                        <h3 class="card__title">Soporte TI e Infraestructura</h3>
+                        <div class="chips">
+                            <span class="mini-tag">Soporte Técnico</span>
+                            <span class="mini-tag">Mantenimiento</span>
+                            <span class="mini-tag">Redes</span>
+                            <span class="mini-tag">Videovigilancia</span>
+                            <span class="mini-tag">Automatización</span>
+                        </div>
+                    </article>
+
+                    <article class="card reveal" data-reveal-delay="300">
+                        <div class="card__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11H3v10h6V11Z"/><path d="M15 7H9v14h6V7Z"/><path d="M21 3h-6v18h6V3Z"/></svg>
+                        </div>
+                        <h3 class="card__title">Administrativo y Comercial</h3>
+                        <div class="chips">
+                            <span class="mini-tag">Gestión Administrativa</span>
+                            <span class="mini-tag">Atención al Cliente</span>
+                            <span class="mini-tag">Asesoría Comercial</span>
+                            <span class="mini-tag">Ofimática</span>
+                            <span class="mini-tag">Gestión de Procesos</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PROYECTOS ===================== -->
+        <section id="proyectos" class="section section--alt">
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="section__kicker">04 — Trabajo</span>
+                    <h2 class="section__title">Proyectos</h2>
+                </header>
+
+                <div class="projects">
+                    <article class="project project--featured reveal">
+                        <div class="project__head">
+                            <span class="project__index">01</span>
+                            <div class="project__tags">
+                                <span class="tag tag--app">PWA · CRM</span>
+                            </div>
+                        </div>
+                        <p class="project__flag">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.9 5.8H20l-4.9 3.6 1.9 5.8L12 14.6 7 18.2l1.9-5.8L4 8.8h6.1L12 3Z"/></svg>
+                            Proyecto destacado
+                        </p>
+                        <h3 class="project__title">ClienteAPP 3.0 — CRM para Casas Prefabricadas</h3>
+                        <p class="project__desc">
+                            CRM instalable (PWA) desarrollado para Construsoluciones del Meta. Gestiona el
+                            ciclo completo del cliente: desde la cotización y la ficha técnica de la vivienda
+                            hasta los pagos por etapas, las finanzas y el seguimiento comercial.
+                        </p>
+                        <ul class="project__points">
+                            <li>Gestión de clientes, proyectos y pagos por etapas</li>
+                            <li>Fichas técnicas de construcción y cotizador integrado</li>
+                            <li>Módulo financiero: comisiones, préstamos y base mensual</li>
+                            <li>Autenticación 2FA (TOTP), búsqueda global y generación de PDF</li>
+                            <li>Sincronización con Supabase y funcionamiento offline</li>
+                        </ul>
+                        <div class="chips">
+                            <span class="mini-tag">JavaScript</span>
+                            <span class="mini-tag">Bootstrap 5</span>
+                            <span class="mini-tag">Supabase</span>
+                            <span class="mini-tag">PWA</span>
+                            <span class="mini-tag">TOTP 2FA</span>
+                            <span class="mini-tag">jsPDF</span>
+                        </div>
+                    </article>
+
+                    <article class="project reveal" data-reveal-delay="100">
+                        <div class="project__head">
+                            <span class="project__index">02</span>
+                            <div class="project__tags">
+                                <span class="tag tag--dev">Sitio Corporativo</span>
+                            </div>
+                        </div>
+                        <h3 class="project__title">Web Construsoluciones del Meta</h3>
+                        <p class="project__desc">
+                            Sitio web corporativo para una empresa de casas prefabricadas en Villavicencio.
+                            Presenta los sistemas constructivos, el catálogo de obras, el proceso de compra
+                            y el plan de pagos, con galerías de materiales y contacto directo por WhatsApp.
+                        </p>
+                        <ul class="project__points">
+                            <li>Catálogo de servicios: viviendas, kioscos, cabañas y bodegas</li>
+                            <li>Galerías y carruseles de materiales y obras terminadas</li>
+                            <li>Secciones de proceso, inversión y grupo empresarial</li>
+                            <li>Diseño responsivo con contacto directo por WhatsApp</li>
+                        </ul>
+                        <div class="chips">
+                            <span class="mini-tag">HTML5</span>
+                            <span class="mini-tag">CSS3</span>
+                            <span class="mini-tag">JavaScript</span>
+                            <span class="mini-tag">Responsive</span>
+                            <span class="mini-tag">GitHub Pages</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://maicolmoreno18-creator.github.io/PAGINA-CDM/" target="_blank" rel="noopener" class="project__link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                                Ver sitio
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project reveal" data-reveal-delay="200">
+                        <div class="project__head">
+                            <span class="project__index">03</span>
+                            <div class="project__tags">
+                                <span class="tag tag--dev">Desarrollo Web</span>
+                            </div>
+                        </div>
+                        <h3 class="project__title">Portafolio Personal</h3>
+                        <p class="project__desc">
+                            Sitio web personal diseñado y desarrollado desde cero: una sola página
+                            estática, oscura y responsiva, sin frameworks de estilo, con animaciones
+                            discretas y publicada en GitHub Pages.
+                        </p>
+                        <ul class="project__points">
+                            <li>Diseño propio, responsivo y accesible</li>
+                            <li>HTML, CSS y JavaScript sin dependencias de build</li>
+                            <li>Animaciones de entrada y navegación fluida</li>
+                            <li>Despliegue en GitHub Pages</li>
+                        </ul>
+                        <div class="chips">
+                            <span class="mini-tag">HTML5</span>
+                            <span class="mini-tag">CSS3</span>
+                            <span class="mini-tag">JavaScript</span>
+                            <span class="mini-tag">Responsive</span>
+                            <span class="mini-tag">GitHub Pages</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://maicolmoreno18-creator.github.io/PORTAFOLIO/" target="_blank" rel="noopener" class="project__link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                                Ver sitio
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="projects__note reveal">
+                    Más trabajo disponible en
+                    <a href="https://github.com/maicolmoreno18-creator" target="_blank" rel="noopener">github.com/maicolmoreno18-creator</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- ===================== FORMACIÓN ===================== -->
+        <section id="formacion" class="section">
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="section__kicker">05 — Formación</span>
+                    <h2 class="section__title">Formación</h2>
+                </header>
+
+                <div class="cards">
+                    <article class="edu reveal">
+                        <div class="edu__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1 2.7 3 6 3s6-2 6-3v-5"/></svg>
+                        </div>
+                        <h3 class="edu__title">Ingeniería de Sistemas</h3>
+                        <p class="edu__meta">Título Profesional</p>
+                        <p class="edu__inst">Corporación Universitaria Remington</p>
+                        <p class="edu__period">2018 – 2023</p>
+                        <p class="edu__desc">
+                            Énfasis en programación, lógica computacional y desarrollo de soluciones de software.
+                        </p>
+                    </article>
+
+                    <article class="edu reveal" data-reveal-delay="100">
+                        <div class="edu__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                        </div>
+                        <h3 class="edu__title">Asistencia Administrativa</h3>
+                        <p class="edu__meta">Formación Complementaria</p>
+                        <p class="edu__inst">SENA</p>
+                        <p class="edu__period">2017</p>
+                        <p class="edu__desc">
+                            Gestión administrativa, manejo de información y atención al cliente.
+                        </p>
+                    </article>
+
+                    <article class="edu reveal" data-reveal-delay="200">
+                        <div class="edu__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="m8.5 13-1.5 8 5-3 5 3-1.5-8"/></svg>
+                        </div>
+                        <h3 class="edu__title">Cursos y Certificaciones</h3>
+                        <ul class="edu__list">
+                            <li>Soporte técnico para equipos de cómputo</li>
+                            <li>Inglés — nivel 1</li>
+                            <li>Digitalización con Google</li>
+                            <li>Ciberseguridad en teletrabajo</li>
+                            <li>Gestión de riesgos y seguridad</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CONTACTO ===================== -->
+        <section id="contacto" class="section section--alt">
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="section__kicker">06 — Contacto</span>
+                    <h2 class="section__title">Trabajemos juntos</h2>
+                    <p class="section__sub">
+                        ¿Un proyecto, una vacante o una consulta técnica? Escríbeme por el canal que prefieras.
+                    </p>
+                </header>
+
+                <div class="contact">
+                    <a href="mailto:maicolmoreno_18@outlook.com" class="contact__card reveal">
+                        <span class="contact__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+                        </span>
+                        <span class="contact__label">Correo</span>
+                        <span class="contact__value">maicolmoreno_18@outlook.com</span>
+                    </a>
+
+                    <a href="https://wa.me/573502837223" target="_blank" rel="noopener" class="contact__card reveal" data-reveal-delay="80">
+                        <span class="contact__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M.5 23.5 2.14 17.5A11.37 11.37 0 0 1 .64 11.78C.64 5.43 5.82.25 12.17.25a11.4 11.4 0 0 1 11.4 11.53c0 6.35-5.18 11.53-11.53 11.53a11.5 11.5 0 0 1-5.5-1.4L.5 23.5Zm6.4-3.72.37.22a9.5 9.5 0 0 0 4.86 1.33 9.58 9.58 0 0 0 9.58-9.58A9.56 9.56 0 0 0 12.17 2.2 9.58 9.58 0 0 0 2.6 11.78a9.5 9.5 0 0 0 1.45 5.08l.25.4-.98 3.55 3.58-.03ZM17.6 14.3c-.08-.14-.3-.22-.63-.38-.33-.17-1.95-.96-2.25-1.07-.3-.11-.52-.17-.74.17-.22.33-.85 1.06-1.04 1.28-.19.22-.38.25-.71.08-.33-.16-1.39-.51-2.65-1.63-.98-.87-1.64-1.95-1.83-2.28-.19-.33-.02-.5.14-.67.15-.15.33-.38.49-.58.16-.19.22-.33.33-.55.11-.22.06-.41-.03-.58-.08-.17-.74-1.79-1.02-2.45-.27-.64-.54-.55-.74-.56l-.63-.01c-.22 0-.58.08-.88.41-.3.33-1.15 1.13-1.15 2.75s1.18 3.19 1.34 3.41c.16.22 2.32 3.54 5.62 4.96.79.34 1.4.54 1.88.69.79.25 1.5.21 2.07.13.63-.09 1.95-.8 2.22-1.56.28-.77.28-1.42.2-1.56Z"/></svg>
+                        </span>
+                        <span class="contact__label">WhatsApp</span>
+                        <span class="contact__value">+57 350 283 7223</span>
+                        <span class="contact__hint">Canal preferido · solo WhatsApp</span>
+                    </a>
+
+                    <a href="https://github.com/maicolmoreno18-creator" target="_blank" rel="noopener" class="contact__card reveal" data-reveal-delay="160">
+                        <span class="contact__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+                        </span>
+                        <span class="contact__label">GitHub</span>
+                        <span class="contact__value">maicolmoreno18-creator</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a class="brand brand--sm" href="#hero">
+                <span class="brand__text">George<span class="brand__dot">.</span>Moreno</span>
+            </a>
+            <p class="footer__copy">© <span id="year"></span> George Moreno — Ingeniería de Sistemas · Soporte TI · Datos · Web</p>
+            <a href="#hero" class="footer__top" aria-label="Volver arriba">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
